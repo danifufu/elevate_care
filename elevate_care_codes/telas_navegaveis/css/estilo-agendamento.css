@@ -1,0 +1,390 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 2px;
+    overflow: auto;
+}
+
+#cabecalho {
+    background-color: #6CA5CE;
+    height: 70px;    
+}
+
+#cabecalho p {
+    text-align: center;
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#setabaixo {
+    float: right;
+    padding-top: 30px;
+    padding-right: 45px;
+}
+
+#logo {
+    padding-top: 5px;
+    padding-left: 10px;
+} 
+
+#linhalogo {
+    border-color:#4E7FA3;
+    border-style:ridge
+}
+
+#historico {
+    padding-top: 7px;
+    background-color: #D9E1E3;
+    height: 28px;
+    -moz-box-shadow:    inset 0 0 4px #675F5C;
+    -webkit-box-shadow: inset 0 0 4px #675F5C;
+    box-shadow:         inset 0 0 4px #675F5C;
+    color: #675F5C;
+}
+
+#navegar {
+    text-decoration: none;
+    color: #675F5C;
+}
+
+#historico button {
+    float: right;
+    background-color: #D9E1E3;
+    border-radius: 50px;
+    color:#000;
+    cursor: pointer;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#historico button:hover {
+    opacity: 0.8;
+}
+
+#pesquisar {
+    border-radius: 10px;
+    float: right;
+    margin-right: 5px;
+}
+
+aside {
+    background-color: #F9F9F9;
+    border-right: solid 2px #4E7FA3;
+    height: 840px;
+    width: 18%;
+    margin-right: 10px;
+    float: left;
+}
+
+aside img {
+    margin-top: 15px;
+    margin-left: 93px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li ul li {
+    width: 90%;
+    margin-left: 15px;
+}
+
+aside nav ul li ul li a {
+    font-size: 18px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #204057;
+    width: 92%;
+    height: 35px;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    background-color: #9CC5E2;
+    border: solid 1px #4E7FA3;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;    
+}
+
+aside nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+aside nav ul ul li a {
+    background-color: #BBD7EC;
+}
+
+aside nav ul li a:hover {
+    color: #fff;
+    background-color: #3681B8;
+    border: solid 1px #fff;
+}
+
+aside nav ul li:hover ul {
+    visibility: visible;
+    position: relative;
+    display: contents;
+}
+
+#home {
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#paciente {
+    background-image: url("../img/paciente.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#medico {
+    background-image: url("../img/medico.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#financeiro {
+    background-image: url("../img/financeiro.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#relatorios {
+    background-image: url("../img/relatorios.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#configuracoes {
+    background-image: url("../img/configuracoes.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#maintitulo {
+    margin-bottom: -12px;
+    color: #204057;
+}
+
+#conteudo {
+    padding-top: 15px;
+}
+
+main {
+    width: 80%;
+    height: 400px;
+    float: left;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+hr {
+	width: 100%;
+    border-color: #857976;
+    border-style: ridge;
+}
+
+div h3 {
+    margin-bottom: 10px;
+    color: #204057;
+}
+
+#pesquisa-paciente {
+    border-radius: 10px 10px 10px 10px;
+    size: 60px;
+    border: 2px solid #204057;
+    height: 30px;
+    width: 250px;
+}
+
+button[type=submit] {
+    background-color: #204057;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff
+}
+
+button {
+    cursor: pointer;
+    height: 32px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#data-agenda {
+    border-radius: 10px 10px 10px 10px;
+    size: 60px;
+    border: 2px solid #204057;
+    height: 30px;
+    width: 170px;
+}
+
+#medicos {
+    size: 60px;
+    border: 2px solid #204057;
+    height: 100px;
+    width: 200px;
+}
+
+#datagenda {
+    float: right;
+    position: absolute;
+    top: 160px;
+    right: 600px;
+    padding-top: 2%;    
+}
+
+#btn-pesquisar {
+    padding-top: 2%;
+}
+
+button[type=submit] {
+    background-color: #204057;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff
+}
+
+#horariodisponiel {
+    float: right;
+    position: absolute;
+    top: 300px;
+    right: 600px;
+    padding-top: 2%;
+}
+
+#botaoagendar {
+    padding-top: 5%
+}
+
+#modal-agendamento {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    width: 25%;
+    height: 35%;
+    min-width: 300px;
+    padding: 40px;
+    border: 6px solid #3681B8;
+    border-radius: 10%;
+    position: relative;
+    animation-duration: 0.3s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+.subtitulo {
+    color: #204057;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 20px;
+
+}
+
+.fechar {
+    position: absolute;
+    font-size: 1.2em;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #204057;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0.3);
+}
+
+#confirmar {
+    background-color: #4ACB67;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff;
+    margin-left: 28%;
+    margin-right: 5%;
+    margin-top: 3%;
+    cursor: pointer;
+
+}
+
+#cancelar {
+    background-color: #C5563D;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff;
+    cursor: pointer;
+}
+
+#confirmar:hover {
+    opacity: 0.8;
+}
+
+#cancelar:hover {
+    opacity: 0.8;
+}
+
+#lista-modal {
+    font-family: 'Lato', sans-serif;
+    color: #204057;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 22%;
+    list-style: none;
+}
+
+#lista-modal li {
+    padding-bottom: 15px;
+}

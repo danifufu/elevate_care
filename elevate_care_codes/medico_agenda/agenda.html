@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Tela referente à agenda médica; Elevate Care: Sistema de Gestão de Atendimentos Clínicos; Cliente: IRM - Instituto Roberto Mateus" />
+        <meta name="Keywords" content="elevate, care, sistema, atendimento, clinico, medico, saude, irm, instituto, robeto mateus, agenda, paciente" />
+        <meta name="robots" content="ALL" />
+        <meta name="Author" content="Carlos Augusto Candal" />
+        <meta name="language" content="pt-br" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="shortcut icon" type="imagex/png" href="img/logozinha-elevate.png">
+        <title>Elevate Care</title>    
+    </head>
+    <body>
+        <section id="container">
+            <header id="cabecalho">
+                <div>
+                    <img id="logo" src="img/elevate-care-white2.png" alt="Logo Elevate Care" />
+                    <img id="setabaixo" src="img/setabaixo.png"/>
+                    <p>Bem-vindo,<br>Administrador!</p>
+                </div>                
+            </header>
+            <aside>
+                <img id="logo-irm" src="img/logoirm.png" alt="Logo IRM"/>
+                <hr id="linhalogo"/>
+                <nav>
+                    <ul id="menu">
+                        <li><a id="home" href="index.html">Home</a></li>
+                        <li><a id="paciente" href="paciente.html">Paciente</a>
+                            <ul>
+                                <li><a href="cadastro-paciente.html">Cadastro</a></li> 
+                                <li><a href="agendamento-paciente.html">Agendamento</a></li>
+                            </ul>
+                            </li>
+                        <li><a id="medico" href="medico.html">Médico</a>
+                            <ul>
+                                <li><a href="agenda-medico.html">Agenda</a></li>
+                                <li><a href="pep-medico.html">P.E.P.</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="financeiro" href="financeiro.html">Financeiro</a></li>
+                        <li><a id="relatorios" href="relatorios.html">Relatórios</a>
+                            <ul>
+                                <li><a href="consultas-paciente.html">Consultas por Paciente</a></li> 
+                                <li><a href="consultas-periodo.html">Consultas por Período</a></li> 
+                                <li><a href="quantidade-agendamentos.html">Quantidade de Agendamentos</a></li>
+                                <li><a href="consultas-medico.html">Consultas por Médico</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="configuracoes" href="configuracoes.html">Configurações</a></li>
+                    </ul>
+                    
+                </nav>
+                </aside>
+                <div id="historico">
+                    <a>Home > Médico > Agenda</a>
+                    <input id="pesquisar" type="search" placeholder="  Pesquisar..." />
+                </div>
+                <main>
+                    <article id="amain">
+                        <header id="maintitulo">
+                            <div><h2>Agenda<img class="impressora" src="img/impressora.png" alt="impressora" />
+                                <img class="atualizar" src="img/update.png" alt="atualizar" />
+                                <button id="botao-sino"><img id="sino" src="img/sino.png" alt="Sino"></button></h2>
+                                <div id="modal-simples"class="modal">
+                                <div class="conteudo-modal">
+                                    <span class="fechar">&times;</span>
+                                    <table class="borda-tabela">
+                                        <tr>
+                                            <th>Pacientes</th>
+                                            <th>Data</th>
+                                            <th>Hora</th>
+                                            <th>Médicos</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Maria Ramos</td>
+                                            <td>10/10</td>
+                                            <td>13:30</td>
+                                            <td>Dr. Arthur Cervero</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Albuquerque</td>
+                                            <td>10/10</td>
+                                            <td>13:30</td>
+                                            <td>Dra. Fátima Freitas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marta Vasconcelos</td>
+                                            <td>10/10</td>
+                                            <td>13:30</td>
+                                            <td>Dr. Leonardo Mota</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Raissa Lima</td>
+                                            <td>10/10</td>
+                                            <td>14:30</td>
+                                            <td>Dra. Fátima Freitas</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                            </div>
+                        </header>
+                        <hr/>
+                    <section id="conteudo">
+                        <script src="js/main.js"></script>
+                        <div>
+                            <input type="date" name="calendário" />                                
+                        </div>
+                            <legend><br><h4>Médicos</h4></legend>
+                            <select id="medicos" multiple="multiple">
+                                <option value="1" selected="selected">Dr. Roberto Muniz</option>
+                                <option value="2">Dra. Fátima Freitas</option>
+                                <option value="3">Dr. Flávio Aguiar</option>
+                                <option value="4">Dra. Manoela Rizo</option>
+                                <option value="5">Dr. Leonardo Mota</option>
+                                <option value="6">Dra. Larissa Borba</option>
+                                <option value="7">Dr. Sérgio Leão</option>
+                                <option value="8">Dra. Ivone Corrêa</option>
+                                <option value="9">Dr. Hugo Abreu</option>
+                                <option value="10">Dr. Arthur Cervero</option>
+                            </select>
+                            <legend><br><h4>Andares</h4></legend>
+                            <select id="andares" multiple="multiple">
+                                <option value="1" selected="selected">Primeiro</option>
+                                <option value="2">Segundo</option>
+                                <option value="3">Terceiro</option>
+                            </select>              
+                    </section>
+                        <table id="tela-agenda">
+                            <tr id="doutores">
+                                <td></td>
+                                <th>Dr. Roberto Muniz</th>
+                                <th>Dra. Fátima Freitas</th>
+                                <th>Dr. Sérgio Leão</th>
+                            </tr>
+                            <tr>
+                                <td class="hora">08:00</td>
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">08:00 - 08:15</td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">08:20 - 08:35</td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">08:40 - 08:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table>                                    
+                                </td>
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">08:00 - 08:15</td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">08:20 - 08:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">08:40 - 08:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">08:00 - 08:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">08:20 - 08:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">08:40 - 08:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hora">09:00</td>
+                                <td class="conteudo">
+                                <table>
+                                    <tr>
+                                        <td class="horario">09:00 - 09:15 </td>
+                                        <td>
+                                            <img class="icone" src="img/edit.png" alt="editar" />
+                                            <img class="icone" src="img/lixo.png" alt="lixo" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Érika Azevedo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="espaco">Retorno</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="horario">09:20 - 09:35 </td>
+                                        <td>
+                                            <img class="icone" src="img/edit.png" alt="editar" />
+                                            <img class="icone" src="img/lixo.png" alt="lixo" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Marcos Azevedo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="espaco">Primeira Consulta</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="horario">09:40 - 09:55 </td>
+                                        <td>
+                                            <img class="icone" src="img/edit.png" alt="editar" />
+                                            <img class="icone" src="img/lixo.png" alt="lixo" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Claudio Costa</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="espaco">Segunda Consulta</td>
+                                    </tr>
+                                </table> 
+                                </td>  
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">09:00 - 09:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">09:20 - 09:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">09:40 - 09:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                    </td> 
+                                    <td class="conteudo">
+                                        <table>
+                                            <tr class="conteudo-int">
+                                                <td class="horario">09:00 - 09:15 </td>
+                                                <td>
+                                                    <img class="icone" src="img/edit.png" alt="editar" />
+                                                    <img class="icone" src="img/lixo.png" alt="lixo" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Érika Azevedo</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="espaco">Retorno</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="horario">09:20 - 09:35 </td>
+                                                <td>
+                                                    <img class="icone" src="img/edit.png" alt="editar" />
+                                                    <img class="icone" src="img/lixo.png" alt="lixo" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Marcos Azevedo</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="espaco">Primeira Consulta</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="horario">09:40 - 09:55 </td>
+                                                <td>
+                                                    <img class="icone" src="img/edit.png" alt="editar" />
+                                                    <img class="icone" src="img/lixo.png" alt="lixo" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Claudio Costa</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="espaco">Segunda Consulta</td>
+                                            </tr>
+                                        </table> 
+                                    </td> 
+                                </tr>                                                      
+                            <tr id="dez">
+                                <td class="hora">10:00</td>
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">10:00 - 10:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">10:20 - 10:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">10:40 - 10:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">10:00 - 10:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">10:20 - 10:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">10:40 - 10:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>                  
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">10:00 - 10:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">10:20 - 10:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">10:40 - 10:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>                                    
+                            </tr>
+                            <tr id="onze">
+                                <td class="hora">11:00</td>
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">11:00 - 11:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">11:20 - 11:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">11:40 - 11:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>  
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">11:00 - 11:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">11:20 - 11:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">11:40 - 11:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>                
+                                <td class="conteudo">
+                                    <table>
+                                        <tr>
+                                            <td class="horario">11:00 - 11:15 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Érika Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Retorno</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">11:20 - 11:35 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcos Azevedo</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Primeira Consulta</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="horario">11:40 - 11:55 </td>
+                                            <td>
+                                                <img class="icone" src="img/edit.png" alt="editar" />
+                                                <img class="icone" src="img/lixo.png" alt="lixo" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Claudio Costa</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="espaco">Segunda Consulta</td>
+                                        </tr>
+                                    </table> 
+                                </td>                                
+                            </tr>                               
+                        </table>
+                    </article> 
+                </main>                 
+        </section>
+    </body>    
+</html>
+                 

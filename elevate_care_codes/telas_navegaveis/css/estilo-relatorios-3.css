@@ -1,0 +1,281 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 2px;
+    overflow: auto;
+}
+
+#cabecalho {
+    background-color: #6CA5CE;
+    height: 70px;    
+}
+
+#cabecalho p {
+    text-align: center;
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#setabaixo {
+    float: right;
+    padding-top: 30px;
+    padding-right: 45px;
+}
+
+#logo {
+    padding-top: 5px;
+    padding-left: 10px;
+} 
+
+#linhalogo {
+    border-color:#4E7FA3;
+    border-style:ridge
+}
+
+#historico {
+    padding-top: 7px;
+    background-color: #D9E1E3;
+    height: 28px;
+    -moz-box-shadow:    inset 0 0 4px #675F5C;
+    -webkit-box-shadow: inset 0 0 4px #675F5C;
+    box-shadow:         inset 0 0 4px #675F5C;
+    color: #675F5C;
+}
+
+#navegar {
+    text-decoration: none;
+    color: #675F5C;
+}
+
+#historico button {
+    float: right;
+    background-color: #D9E1E3;
+    border-radius: 50px;
+    color:#000;
+    cursor: pointer;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#historico button:hover {
+    opacity: 0.8;
+}
+
+#pesquisar {
+    border-radius: 10px;
+    float: right;
+    margin-right: 5px;
+}
+
+aside {
+    background-color: #F9F9F9;
+    border-right: solid 2px #4E7FA3;
+    height: 840px;
+    width: 18%;
+    margin-right: 10px;
+    float: left;
+}
+
+aside img {
+    margin-top: 15px;
+    margin-left: 93px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li ul li {
+    width: 90%;
+    margin-left: 15px;
+}
+
+aside nav ul li ul li a {
+    font-size: 18px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #204057;
+    width: 92%;
+    height: 35px;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    background-color: #9CC5E2;
+    border: solid 1px #4E7FA3;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;    
+}
+
+aside nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+aside nav ul ul li a {
+    background-color: #BBD7EC;
+}
+
+aside nav ul li a:hover {
+    color: #fff;
+    background-color: #3681B8;
+    border: solid 1px #fff;
+}
+
+aside nav ul li:hover ul {
+    visibility: visible;
+    position: relative;
+    display: contents;
+}
+
+#home {
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#paciente {
+    background-image: url("../img/paciente.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#medico {
+    background-image: url("../img/medico.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#financeiro {
+    background-image: url("../img/financeiro.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#relatorios {
+    background-image: url("../img/relatorios.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#configuracoes {
+    background-image: url("../img/configuracoes.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#maintitulo {
+    margin-bottom: -12px;
+    color: #204057;
+}
+
+main {
+    width: 80%;
+    height: 800px;
+    float: left;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+#conteudo {
+    padding-top: 15px;
+}
+
+hr {
+	width: 100%;
+    border-color: #857976;
+    border-style: ridge;
+}
+
+div h3 {
+    margin-bottom: 0.5%;
+    color: #204057;
+}
+
+.texto {
+    color: #204057;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.conteudo-primario {
+    padding-top: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+#checkbox1 {
+    width: 17px;
+    height: 17px;
+    margin-left: 13px;
+}
+
+#checkbox2 {
+    width: 17px;
+    height: 17px;
+    margin-left: 32px;
+}
+
+#conteudo-secundario {
+    padding-top: 25px;
+}
+
+#data-inicial {
+    border-radius: 10px 10px 10px 10px;
+    size: 60px;
+    border: 2px solid #204057;
+    height: 30px;
+    width: 170px;
+    margin-right: 15px;
+}
+
+#data-final {
+    border-radius: 10px 10px 10px 10px;
+    size: 60px;
+    border: 2px solid #204057;
+    height: 30px;
+    width: 170px;
+}
+
+button[type=submit] {
+    background-color: #204057;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff
+}
+
+button {
+    cursor: pointer;
+    height: 32px;
+}
+
+button[type=submit]:hover {
+    opacity: 0.8;
+}
+
+#relatorio-pdf {
+    padding-top: 25px;
+}
+
+embed {
+    width: 1500px;
+    height: 470px;
+}

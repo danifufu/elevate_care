@@ -1,0 +1,114 @@
+.grupos-container {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;    
+}
+
+.modal2 {
+    width: 750px;
+    height: 500px;
+    margin: auto;
+    border: solid 3px #3681B8;
+    border-radius: 10px;
+    background: #ffffff;
+    position: relative;
+}
+
+#taggrupos {
+    background-color: #3681B8;
+    margin: 0px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+table {
+    background-color: #E7E7E7;
+    width: 80%;
+    height: 250px;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th {
+    background-color: #C4C4C4;
+}
+
+table th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+tr {
+    border-bottom: 1pt solid #C4C4C4;
+}
+
+#ultimaLinha {
+    border-bottom: none;
+}
+
+#icones-grupos {
+    margin-top: 10%;
+    text-align: right;
+    padding-right: 10%;
+}
+
+#tabela {    
+    color: #204057;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+/*table.borda-tabela {
+    border-collapse: collapse;
+    border: 1px solid #3681B8;
+}
+
+
+table.borda-tabela td {
+    background-color: #E7E7E7;
+    border: 1px solid #C4C4C4;
+    text-align: center; 
+    vertical-align: middle;
+    padding: 2px 15px 2px 15px;
+}
+ 
+table.borda-tabela th {
+    border: 1px solid #C4C4C4;
+    background-color: #C4C4C4;
+    color: #204057;
+    padding: 2px 15px 2px 15px;
+}*/
+
+.V {
+    border-radius: 50%;
+    background-color: #4BD37B;
+    border-color: #4BD37B;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.X {
+    border-radius: 50%;
+    background-color: #ED6C30;
+    border-color: #ED6C30;
+    color: #FFFFFF;
+    cursor: pointer;
+}

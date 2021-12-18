@@ -1,0 +1,491 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 2px;
+    overflow: auto;
+}
+
+#cabecalho {
+    background-color: #6CA5CE;
+    height: 70px;    
+}
+
+#cabecalho p {
+    text-align: center;
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#setabaixo {
+    float: right;
+    padding-top: 30px;
+    padding-right: 45px;
+}
+
+#logo {
+    padding-top: 5px;
+    padding-left: 10px;
+} 
+
+#linhalogo {
+    border-color:#4E7FA3;
+    border-style:ridge
+}
+
+#historico {
+    padding-top: 7px;
+    background-color: #D9E1E3;
+    height: 28px;
+    -moz-box-shadow:    inset 0 0 4px #675F5C;
+    -webkit-box-shadow: inset 0 0 4px #675F5C;
+    box-shadow:         inset 0 0 4px #675F5C;
+    color: #675F5C;
+}
+
+#navegar {
+    text-decoration: none;
+    color: #675F5C;
+}
+
+#historico button {
+    float: right;
+    background-color: #D9E1E3;
+    border-radius: 50px;
+    color:#000;
+    cursor: pointer;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#historico button:hover {
+    opacity: 0.8;
+}
+
+#pesquisar {
+    border-radius: 10px;
+    float: right;
+    margin-right: 5px;
+}
+
+aside {
+    background-color: #F9F9F9;
+    border-right: solid 2px #4E7FA3;
+    height: 840px;
+    width: 18%;
+    margin-right: 10px;
+    float: left;
+}
+
+aside img {
+    margin-top: 15px;
+    margin-left: 93px;
+}
+
+main {
+    width: 80%;
+    height: 800px;
+    float: left;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li ul li {
+    width: 90%;
+    margin-left: 15px;
+}
+
+aside nav ul li ul li a {
+    font-size: 18px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #204057;
+    width: 92%;
+    height: 35px;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    background-color: #9CC5E2;
+    border: solid 1px #4E7FA3;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;    
+}
+
+aside nav ul li a:hover {
+    color: #fff;
+    background-color: #3681B8;
+    border: solid 1px #fff;
+}
+
+aside nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+aside nav ul ul li a {
+    background-color: #BBD7EC;
+}
+
+aside nav ul li:hover ul {
+    visibility: visible;
+    position: relative;
+    display: contents;
+}
+
+#home {
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#paciente {
+    background-image: url("../img/paciente.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#medico {
+    background-image: url("../img/medico.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#financeiro {
+    background-image: url("../img/financeiro.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#relatorios {
+    background-image: url("../img/relatorios.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#configuracoes {
+    background-image: url("../img/configuracoes.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#maintitulo {
+    margin-bottom: -12px;
+    color: #204057;
+}
+
+#conteudo {
+    padding-top: 15px;
+}
+
+.pesquisa{
+    margin-right: 5%;
+}
+
+hr {
+	width: 100%;
+    border-color: #857976;
+    border-style: ridge;
+}
+
+#pesquisar-paciente {
+    border-radius: 10px 10px 10px 10px;
+    size: 60px;
+    border: 2px solid #204057;
+    height: 30px;
+    width: 500px;
+}
+
+div h3 {
+    margin-bottom: 0.5%;
+    color: #204057;
+}
+
+button[type=submit] {
+    background-color: #204057;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff;
+}
+
+button {
+    cursor: pointer;
+    height: 32px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+article img {
+    padding-left: 22%;
+    padding-top: 14%;
+    padding-bottom: 19%;
+}
+
+button[type=button] {
+    background-color: #204057;
+    border-radius: 10px;
+    padding: 4px 8px 4px 8px;
+    color:#fff;
+}
+
+.tabela {
+    margin-top: 3%;
+    color: #204057;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+table.borda-tabela {
+    border-collapse: collapse;   
+}
+ 
+table.borda-tabela td {
+    border: 1px solid black;
+    text-align: center; 
+    vertical-align: middle;
+    padding: 2px 55px 2px 55px;
+}
+ 
+table.borda-tabela th {
+    border: 1px solid black;
+    background-color: #204057;
+    color: white;
+    padding: 2px 15px 2px 15px;
+}
+
+
+.linha-tabela {
+    background-color:#b3ddfb;
+}
+
+.cabecalho{
+    margin-top: 2%;
+    background-color: #204057;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    max-width: 90%;
+    font-size: 50;
+}
+
+.modal-container-cadastro {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container-cadastro.mostrar{
+    display: flex;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mostrar{
+    animation-duration: 1s;
+    animation-name: modal;
+}
+
+.formulario{
+    display: flex;
+    background: white;
+    justify-content: center;
+    margin-top: 6%;
+    max-width: 50%;
+    max-height: 60%;
+    padding: 2%;
+    padding-bottom: 10%;
+    border-radius: 5%;
+    border: #4E7FA3 solid 5px;
+}
+
+.detalhes-usuario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 22px;
+    position: relative;
+}
+
+form .detalhes-usuario .input-box{
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0px 12px 0px;
+}
+
+.detalhes-usuario .input-box input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.botao-radio{
+    padding-right: 15px;
+}
+detalhes-usuario .input-box input:focus{
+    outline: 1px solid  #3681B8;   
+}
+
+#arquivos {
+    border: none;
+}
+
+input[type="file"] {
+    display: none
+}
+
+#label {
+    background-color:#3681B8;
+    padding: 8px;
+    color: white;
+    border: 2px solid #9ec3ff;
+    border-radius: 9px;
+    padding: 15px;
+    position: absolute;
+    top: 117%;
+    left: 1%;
+}
+
+#sexo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    position: absolute;
+    left: 52%;
+    top: 93%;
+    max-width: 50%;
+}
+
+#submit{
+    background-color:#3681B8;
+    color: white;
+    border: 2px solid #9ec3ff;
+    border-radius: 9px;
+    width: 208.11px;
+    height: 59px;
+    position: absolute;
+    right: 35%;
+    top: 93%
+}
+    
+#nomesex{
+    padding-right: 10px;
+}
+
+.botao {
+    height: 45px;
+    width: 100%;
+}
+
+#enviar {
+    position: absolute;
+    left: 34%;
+    top: 110%;
+    width: 100%; 
+}
+
+.modal1 {
+    width: 50%;
+    height: 50%;
+    padding-top: -100px;
+}
+
+.botaox {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color:#204057;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    position: absolute;
+    top: 11%;
+    right: 22%;
+    z-index: 2001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-aviso {
+    color: #204057;
+    font-weight: 800;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    display: none;
+}
+
+.pacientenencontrado{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    height: 20%;
+    background: white;
+    border-radius: 15px;
+    border: 3px solid #9ec3ff;
+    z-index: 3001;
+}
+
+.botaoxx{
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color:#204057;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    position: absolute;
+    top: 39%;
+    right: 24%;
+}

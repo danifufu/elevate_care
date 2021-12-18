@@ -1,0 +1,368 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#cabecalho {
+    background-color: #6CA5CE;
+    height: 70px;    
+}
+
+#logo {
+    padding-top: 5px;
+    padding-left: 10px;
+} 
+
+#linhalogo {
+    border-color:#4E7FA3;
+    border-style:ridge
+}
+
+#setabaixo {
+    float: right;
+    padding-top: 30px;
+    padding-right: 45px;
+}
+
+
+#cabecalho p {
+    text-align: center;
+    float: right;
+    color: #fff;
+    padding-right: 10px;
+}
+
+
+#container {
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 2px;
+    overflow: auto;
+}
+
+#historico {
+    padding-top: 7px;
+    background-color: #D9E1E3;
+    height: 28px;
+    -moz-box-shadow:    inset 0 0 4px #675F5C;
+    -webkit-box-shadow: inset 0 0 4px #675F5C;
+    box-shadow:         inset 0 0 4px #675F5C;
+    color: #675F5C;
+}
+
+#pesquisar {
+    border-radius: 10px;
+    float: right;
+    margin-right: 25px;
+}
+
+aside {
+    background-color: #F9F9F9;
+    border-right: solid 2px #4E7FA3;
+    height: 1450px;
+    width: 18%;
+    margin-right: 10px;
+    float: left;
+}
+
+aside img {
+    margin-top: 15px;
+    margin-left: 93px;
+}
+
+main {
+    width: 79%;
+    height: 800px;
+    float: left;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li ul li {
+    width: 90%;
+    margin-left: 15px;
+}
+
+aside nav ul li ul li a {
+    font-size: 18px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #204057;
+    width: 92%;
+    height: 35px;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    background-color: #9CC5E2;
+    border: solid 1px #4E7FA3;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px grey;    
+}
+
+aside nav ul li a:hover {
+    color: #fff;
+    background-color: #3681B8;
+    border: solid 1px #fff;
+}
+
+aside nav ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+aside nav ul ul li a {
+    background-color: #BBD7EC;
+}
+
+aside nav ul li:hover ul {
+    visibility: visible;
+    position: relative;
+    display: contents;
+}
+
+#home {
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#paciente {
+    background-image: url("../img/paciente.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#medico {
+    background-image: url("../img/medico.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#financeiro {
+    background-image: url("../img/financeiro.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#relatorios {
+    background-image: url("../img/relatorios.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#configuracoes {
+    background-image: url("../img/configuracoes.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#maintitulo {
+    margin-bottom: -12px;
+    color: #204057;
+}
+.impressora {
+    float: right;
+}
+.atualizar {
+    float: right;
+    padding-right: 5px;
+}
+
+#sino {
+    border-radius: 0px;
+    float: left;
+}
+
+.modal {
+    display: none;
+    width: 100vw;
+    height:100vh;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    border: 0;
+}
+
+button {
+    float: right;
+    background-color: #FFF;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.conteudo-modal {
+    margin-top: 0%;
+    margin-right: 28%;
+    float: right ;
+    position:relative;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 15%;
+    width: 28%; 
+    border-radius: 20px;
+    box-shadow: 5px 0 5px  grey;
+    animation-name:modalopen;
+    animation-duration:0.3s;
+    text-align: justify;
+  }
+
+  table.borda-tabela td {
+    padding:2px 5px 2px 5px;
+  }
+
+  table.borda-tabela th {
+    padding:2px 5px 2px 5px;
+  }
+
+  .primeira {
+      font-size: 20px;
+  }
+  
+ .fechar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    color: grey;
+    float: right;
+    font-size: 30px;
+    font-family: monospace;
+  }
+
+.fechar:hover,
+.fechar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+    from{opacity:0}
+    to{opacity:1}
+}
+
+#conteudo {
+    max-width: 50%;
+}
+hr {
+	width: 100%;
+    border-color: #857976;
+    border-style: ridge;
+    margin-bottom: 25px;
+}
+h4 {
+    margin-bottom: 10px;
+    margin-left: 65px;
+}
+
+input[type=date] {
+    color: #204057;
+    text-align:center;
+    box-shadow:1px 1px 5px grey;
+    border: solid #D1E8F8;
+    background-color: #D1E8F8;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 2px;
+    width:196px
+}
+
+#medicos {
+    color: #204057;
+    box-shadow: 1px 1px 5px grey;
+    border: solid #D1E8F8;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 10px;
+    background-color: #D1E8F8;
+    width: 200px;
+    height:150px;
+    padding: 1px;
+}
+
+#andares {
+    color: #204057;
+    box-shadow:1px 1px 5px grey;
+    border: solid #D1E8F8;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 10px;
+    background-color: #D1E8F8;
+    width:200px;
+    height: 150px;
+    padding: 10px 0px 0px;
+    margin:0px 0px 5px;
+}
+
+ #tela-agenda { 
+    box-shadow:1px 1px 5px grey;
+    border: solid #D9E1E3; 
+    border-radius: 10px; 
+    width: 80%; 
+    height: 600px; 
+    margin-left: 230px; 
+    margin-right: 12px; 
+    margin-top: -478px; 
+    padding-top: 10px; 
+    background-color: #D9E1E3; 
+ } 
+
+.conteudo {
+    color: #204057;
+    font-size: 16px;
+    box-shadow:1px 1px 5px grey;
+    background-color: #D1E8F8;
+    border-radius:10px;
+    border:solid 1px;
+    height:20px;
+    width:200px;
+    padding-bottom: 60px;    
+} 
+
+.hora {
+    color: #204057;
+    background-image: url("../img/relogio.png");
+    background-repeat: no-repeat;
+    background-position: 28px 100px;
+    font-size: 22px;
+    box-shadow:1px 1px 5px grey;
+    background-color: #D1E8F8;
+    text-align: center;
+    border-radius: 10px;
+    border:solid 1px;
+    height:20px;
+    width:10px;
+}
+#doutores {    
+    text-align: center;
+}
+
+.horario {
+    font-weight: bold;
+    font-size: 20px;
+}
+.espaco {
+    padding-bottom: 10px;
+}
+
+.icone {
+    float: right;
+}

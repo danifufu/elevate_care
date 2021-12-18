@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Tela de Configurações do sistema para gerenciamento de usuários e permissões; Elevate Care: Sistema de Gestão de Atendimentos Clínicos; Cliente: IRM - Instituto Roberto Mateus"" />
+        <meta name="Keywords" content="elevate, care, sistema, configuracoes, permissões, grupos, usuarios" />
+        <meta name="robots" content="ALL" />
+        <meta name="Author" content="Marcelo Guerra" />
+        <meta name="language" content="pt-br" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilo-configuracoes.css" type="text/css">
+        <link rel="shortcut icon" type="imagex/png" href="img/Delevate-care.png">
+        <title>Elevate Care</title>    
+    </head>
+    <body>
+        <section id="container">
+            <header id="cabecalho">
+                <div>
+                    <img id="logo" src="img/elevate-care-white2.png" alt="logo elevate care" />
+                    <img id="setabaixo" src="img/setabaixo.png"/ alt="seta para baixo" />
+                    <p>Bem-vindo,<br>Administrador!</p>
+                </div>                
+            </header>
+            <aside>
+                <img src="img/logoirm.png" alt="logo irm" />
+                <hr id="linhalogo"/>
+                <nav>
+                    <ul id="menu">
+                        <li><a id="home" href="home.html">Home</a></li>
+                        <li><a id="paciente" href="#">Paciente</a>
+                            <ul>
+                                <li><a href="cadastro.html">Cadastro</a></li>
+                                <li><a href="agendamento.html">Agendamento</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="medico" href="#">Médico</a> 
+                            <ul>
+                                <li><a href="agenda.html">Agenda</a></li>
+                                <li><a href="#">P.E.P.</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="financeiro" href="financeiro.html">Financeiro</a></li>
+                        <li><a id="relatorios" href="#">Relatórios</a> 
+                            <ul>
+                                <li><a href="relatorios-1.html">Consultas por Paciente</a></li> 
+                                <li><a href="relatorios-2.html">Consultas por Período</a></li> 
+                                <li><a href="relatorios-3.html">Quantidade de Agendamentos</a></li> 
+                                <li><a href="relatorios-4.html">Consultas por Médico</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="configuracoes" href="configuracoes.html">Configurações</a></li>
+                    </ul>                    
+                </nav>
+            </aside>
+            <div id="historico">
+                <a href="home.html" id="navegar">Home ></a> Configurações
+                <button id="botaoIr">></button>
+                <input id="pesquisar" type="search" placeholder="  Pesquisar..." />
+            </div>
+            <main>
+                <article id="amain">
+                    <header id="maintitulo">
+                        <h2>Configurações</h2>
+                    </header>
+                    <hr />
+                    <div id="options">
+                        <ul>
+                            <li><a id="usuarios" class="botaouser" href="#">Usuários</a></li>
+                            <li><a id="grupos" class="botaogrupos" href="#">Grupos e Permissões</a></li>
+                        </ul>
+                    </div>
+                </article>    
+            </main>
+        </section>
+        <div id="modal-usuario" class="usuarios-container">
+            <div class="modal">
+                <button class="close">X</button>
+                <header id="tagusuarios">
+                    Usuários
+                </header>
+                <div id="div-pesquisar">
+                    <img id="search" src="img/search.png" alt="icone lupa" />
+                    <input id="pesquisarusuario" type="search" placeholder="  Buscar Usuário..." />
+                    <img class="icons" src="img/trash.png" alt="icone deletar" />
+                    <img class="icons" src="img/refresh.png" alt="icone atualizar" />
+                    <img class="icons" src="img/edit.png" alt="icone editar" />
+                    <img class="icons" src="img/add.png" alt="icone adicionar" />
+                </div>
+                <ul>
+                    <li id="adm">
+                        <a class="username">Dr. Roberto Matheus</a>
+                        <a class="userclass">Administrador</a>
+                    </li>
+                    <li>
+                        <a class="username">Dra. Luciana Galvão</a>
+                        <a class="userclass">Médico</a>
+                    </li>
+                    <li>
+                        <a class="username">Dra. Daniele Melo</a>
+                        <a class="userclass">Médico</a>
+                    </li>
+                    <li><a class="username">Emerson Xavier</a>
+                        <a class="userclass">Operacional</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-grupos" class="grupos-container">
+            <div class="modal2">
+                <button class="close2">X</button>
+                <header id="taggrupos">
+                    Grupos e Permissoes
+                </header>
+                <div id="icones-grupos">
+                    <img src="img/add2.png" alt="icone adicionar" />
+                    <img src="img/edit2.png" alt="icone editar" />
+                    <img src="img/refresh2.png" alt="icone atualizar" />
+                    <img src="img/trash2.png" alt="icone deletar" />
+                </div>
+                <div id="tabela">
+                    <table>
+                        <tr>
+                            <th>Grupo</th>
+                            <th>Visualizar</th>
+                            <th>Editar</th>
+                            <th>Criar</th>
+                            <th>Excluir</th>
+                            <th>Imprimir</th>
+                        </tr>
+                        <tr>
+                            <td>Diretoria</td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                        </tr>
+                        <tr>
+                            <td>Médico</td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                        </tr>
+                        <tr>
+                            <td>Atendimento</td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="X">X</button></td>
+                            <td><button class="V">V</button></td>
+                        </tr>
+                        <tr>
+                            <td>Enfermagem</td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="X">X</button></td>
+                            <td><button class="X">X</button></td>
+                            <td><button class="V">V</button></td>
+                        </tr>
+                        <tr>
+                            <td>Consulta</td>
+                            <td><button class="V">V</button></td>
+                            <td><button class="X">X</button></td>
+                            <td><button class="X">X</button></td>
+                            <td><button class="X">X</button></td>
+                            <td><button class="X">X</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> 
+        <script src="js/configuracoes.js"></script>
+    </body>    
+</html>
+                 

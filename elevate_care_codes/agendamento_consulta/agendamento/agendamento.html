@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Tela de agendamento para consulta de paciente; Elevate Care: Sistema de Gestão de Atendimentos Clínicos; Cliente: IRM - Instituto Roberto Mateus" />
+        <meta name="Keywords" content="elevate, care, sistema, atendimento, clinico, medico, saude, irm, instituto, robeto mateus, agendamento, consulta, paciente" />
+        <meta name="robots" content="ALL" />
+        <meta name="Author" content="Luiza Barreto" />
+        <meta name="language" content="pt-br" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilo-relatorios-1.css" type="text/css">
+        <link rel="shortcut icon" type="imagex/png" href="img/logozinha-elevate.png">
+        <title>Elevate Care</title>    
+    </head>
+    <body>
+        <section id="container">
+            <header id="cabecalho">
+                <div>
+                    <img id="logo" src="img/elevate-care-white2.png" alt="logo elevate care" />
+                    <img id="setabaixo" src="img/setabaixo.png" alt="seta para baixo" />
+                    <p>Bem-vindo,<br />Administrador!</p>
+                </div>                
+            </header>
+            <aside>
+                <img src="img/logoirm.png" alt="" />
+                <hr id="linhalogo" />
+                <nav>
+                    <ul id="menu">
+                        <li><a id="home" href="index.html">Home</a></li>
+                        <li><a id="paciente" href="paciente.html">Paciente</a>
+                            <ul>
+                                <li><a href="cadastro-paciente.html">Cadastro</a></li>
+                                <li><a href="agendamento-paciente.html">Agendamento</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="medico" href="medico.html">Médico</a> 
+                            <ul>
+                                <li><a href="agenda-medico.html">Agenda</a></li>
+                                <li><a href="pep-medico.html">P.E.P.</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="financeiro" href="financeiro.html">Financeiro</a></li>
+                        <li><a id="relatorios" href="relatorios.html">Relatórios</a> 
+                            <ul>
+                                <li><a href="consultas-paciente.html">Consultas por Paciente</a></li> 
+                                <li><a href="consultas-periodo.html">Consultas por Período</a></li> 
+                                <li><a href="quantidade-agendamentos.html">Quantidade de Agendamentos</a></li> 
+                                <li><a href="consultas-medico.html">Consultas por Médico</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="configuracoes" href="configuracoes.html">Configurações</a></li>
+                    </ul>
+                </nav>
+                </aside>
+                <div id="historico">
+                    <a>Home > Relatórios</a>
+                    <input id="pesquisar" type="search" placeholder="  Pesquisar..." />
+                </div>
+                <main>
+                    <article id="amain">
+                        <header id="maintitulo">
+                            <h2>Agendamento de consulta</h2>
+                        </header>
+                        <hr />
+                        <div id="conteudo">
+                            <form>
+                                <div>
+                                    <h3>*Buscar paciente:</h3>
+                                    <input id="pesquisa-paciente" type="search" placeholder="  Pesquise por nome ou CPF">
+                                    <button type="submit">Pesquisar</button>
+                                </div>
+                                <div>
+                                <legend><br><h3>*Médicos:</h3></legend>
+                                <select id="medicos" multiple="multiple">
+                                    <option value="1" selected="selected">Drª Cláudia Melo</option>
+                                    <option value="2">Drª Fátima Freitas</option>
+                                    <option value="3">Dr. Flávio Aguiar</option>
+                                    <option value="4">Drª Manoela Rizo</option>
+                                    <option value="5">Dr. Leonardo Mota</option>
+                                    <option value="6">Drª Larissa Borba</option>
+                                    <option value="7">Dr. Sérgio Leão</option>
+                                    <option value="8">Drª Ivone Corrêa</option>
+                                    <option value="9">Dr. Hugo Abreu</option>
+                                    <option value="10">Dr. Arthur Cervero</option>
+                                </select>
+                                </div>
+                                <div>
+                                    <legend><br><h3>*Especialidade:</h3></legend>
+                                    <select id="medicos" multiple="multiple">
+                                        <option value="1" selected="selected">Dermatologia</option>
+                                        <option value="2">Cardiologia</option>
+                                        <option value="3">Urologia</option>
+                                        <option value="4">Pediatria</option>
+                                        <option value="5">Neurologia</option>
+                                        <option value="6">Ginecologia</option>
+                                        <option value="7">Ortopedia</option>
+                                        <option value="8">Radiologia</option>
+                                        <option value="9">Psicologia</option>
+                                        <option value="10">Cirugia Geral</option>
+                                    </select>
+                                </div>
+                                    <div id="btn-pesquisar">
+                                        <button type="submit">Pesquisar</button>
+                                    </div>
+                                    <div id="datagenda">
+                                    <h3>*Escolha uma data:</h3>
+                                    <input type="date" id="data-agenda" name="data-inicial" />
+                                    <button type="submit">Filtrar</button> 
+                                    </div>
+                                    <article id="horariodisponiel">
+                                        <form>
+                                            <h3>Horários disponíveis:</h3>
+                                            <div>
+                                                <input type="radio" id="horario1" name="hora" value="8" />
+                                                <label for="horario1">08:00</label>
+                                                <input type="radio" id="horario2" name="hora" value="9" />
+                                                <label for="horario2">09:00</label>
+                                                <input type="radio" id="horario3" name="hora" value="10" />
+                                                <label for="horario3">10:00</label>
+                                                <input type="radio" id="horario4" name="hora" value="11" />
+                                                <label for="horario4">11:00</label>
+                                                <br />
+                                                <input type="radio" id="horario5" name="hora" value="12" />
+                                                <label for="horario5">12:00</label>
+                                                <input type="radio" id="horario6" name="hora" value="13" />
+                                                <label for="horario6">13:00</label>
+                                                <input type="radio" id="horario7" name="hora" value="14" />
+                                                <label for="horario7">14:00</label>
+                                                <input type="radio" id="horario8" name="hora" value="15" />
+                                                <label for="horario8">15:00</label>
+                                                <br />
+                                                <input type="radio" id="horario9" name="hora" value="16" />
+                                                <label for="horario9">16:00</label>
+                                                <input type="radio" id="horario10" name="hora" value="17" />
+                                                <label for="horario10">17:00</label>
+                                                <input type="radio" id="horario11" name="hora" value="18" />
+                                                <label for="horario11">18:00</label>
+                                            </div>
+                                    <!--ERRO-->
+                                    <div id="botaoagendar">
+                                        <button id="buttonagende" type="submit">Agendar</button>
+                                        </form>
+                                    </article>
+                                    <div id="modal-agendamento" class="modal-container">
+                                       <div class="modal">
+                                           <button class="fechar">x</button>
+                                           <h2 class="subtitulo">Confirmação de consulta</h2>
+                                           <form class="confirmacao-agendamento">
+                                               <ul id="lista-modal">
+                                                    <li>Agendar consulta de Luiza Barreto?</li>
+                                                    <li>Médico(a):Drª Cláudia Melo</li>
+                                                    <li>Data: 25/10/2021</li>
+                                                    <li>Horário: 10:30</li>
+                                                    <li>Valor da consulta: R$200,00</li>
+                                                </ul>
+                                               <button type="submit" id="confirmar">Confirmar</button>
+                                               <button type="submit" id="cancelar">Cancelar</button>  
+                                           </form>
+                                       </div> 
+                                    </div>
+                                <!--ERRO-->
+                                </div>
+                            </form>
+                        </div>
+                    </article>  
+                    <script src="js/main.js"></script>  
+                </main>
+        </section>
+      </body>    
+</html>
+                 

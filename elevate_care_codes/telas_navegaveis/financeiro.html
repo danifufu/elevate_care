@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Tela do Financeiro para a Busca do Paciente no Sistema; Elevate Care: Sistema de Gestão de Atendimentos Clínicos; Cliente: IRM - Instituto Roberto Mateus" />
+        <meta name="Keywords" content="elevate, care, sistema, atendimento, clinico, medico, saude, irm, instituto, robeto mateus, financeiro, busca, paciente" />
+        <meta name="robots" content="ALL" />
+        <meta name="Author" content="Daniela Araujo" />
+        <meta name="language" content="pt-br" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilo-financeiro.css" type="text/css">
+        <link rel="shortcut icon" type="imagex/png" href="img/logozinha-elevate.png">
+        <title>Elevate Care</title>    
+    </head>
+    <body>
+        <section id="container">
+            <header id="cabecalho">
+                <div>
+                    <img id="logo" src="img/elevate-care-white2.png" alt="logo do Sistema Elevate Care" />
+                    <img id="setabaixo" src="img/setabaixo.png" />
+                    <p>Bem-vindo,<br>Administrador!</p>
+                </div>                
+            </header>
+            <aside>
+                <img src="img/logoirm.png" alt="logo do IRM, Instituto Roberto Mateus" />
+                <hr id="linhalogo"/>
+                <nav>
+                    <ul id="menu">
+                        <li><a id="home" href="home.html">Home</a></li>
+                        <li><a id="paciente" href="#">Paciente</a>
+                            <ul>
+                                <li><a href="cadastro.html">Cadastro</a></li>
+                                <li><a href="agendamento.html">Agendamento</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="medico" href="#">Médico</a> 
+                            <ul>
+                                <li><a href="agenda.html">Agenda</a></li>
+                                <li><a href="#">P.E.P.</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="financeiro" href="financeiro.html">Financeiro</a></li>
+                        <li><a id="relatorios" href="#">Relatórios</a> 
+                            <ul>
+                                <li><a href="relatorios-1.html">Consultas por Paciente</a></li> 
+                                <li><a href="relatorios-2.html">Consultas por Período</a></li> 
+                                <li><a href="relatorios-3.html">Quantidade de Agendamentos</a></li> 
+                                <li><a href="relatorios-4.html">Consultas por Médico</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="configuracoes" href="configuracoes.html">Configurações</a></li>
+                    </ul>
+                </nav>
+                </aside>
+                <div id="historico">
+                    <a href="home.html" id="navegar">Home ></a> Financeiro
+                    <button id="botaoIr">></button>
+                    <input id="pesquisar" type="search" placeholder="  Pesquisar..." />
+                </div>
+                <main>
+                    <article id="amain">
+                        <header id="maintitulo">
+                            <h2>Informações de Pagamento</h2>
+                        </header>
+                        <hr />
+                        <div id="conteudo">
+                            <h3>Pesquisar Paciente:</h3>
+                            <input id="pesquisar-paciente" type="search" placeholder="Ex.: Nome, CPF ou Protocolo" />
+                            <button type="submit">Pesquisar</button>
+                        </div>
+                        <div id="tabela">
+                            <table class="borda-tabela">
+                                <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Hora</th>
+                                    <th>Protocolo</th>
+                                    <th>Nome do Paciente</th>
+                                    <th>Médico(a)</th>
+                                    <th>Status do Pagamento</th>
+                                    <th>Detalhes</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr id="linha-amarela">
+                                    <td>13/10/2021</td>
+                                    <td>15:45</td>
+                                    <td>2021385</td>
+                                    <td>João Silva Pereira</td>
+                                    <td>Dr. Roberto Mateus</td>
+                                    <td>Aguardando Pagamento</td>
+                                    <td><img id="Detalhes" src="img/detalhes.png" alt="ícone de detalhes" /></td>
+                                </tr>
+                                <tr id="linha-vermelha">
+                                    <td>29/05/2021</td>
+                                    <td>10:20</td>
+                                    <td>2021046</td>
+                                    <td>João Silva Pereira</td>
+                                    <td>Dr. Roberto Mateus</td>
+                                    <td>Pendente</td>
+                                    <td><img id="Detalhes" src="img/detalhes.png" alt="ícone de detalhes" /></td>
+                                </tr>
+                                <tr class="linha-verde">
+                                    <td>10/03/2020</td>
+                                    <td>08:00</td>
+                                    <td>2020113</td>
+                                    <td>João Silva Pereira</td>
+                                    <td>Dr. Roberto Mateus</td>
+                                    <td>Pago</td>
+                                    <td><img id="Detalhes" src="img/detalhes.png" alt="ícone de detalhes" /></td>
+                                </tr>
+                                <tr class="linha-verde">
+                                    <td>04/01/2018</td>
+                                    <td>13:15</td>
+                                    <td>2018002</td>
+                                    <td>João Silva Pereira</td>
+                                    <td>Dr. Roberto Mateus</td>
+                                    <td>Pago</td>
+                                    <td><img id="Detalhes" src="img/detalhes.png" alt="ícone de detalhes" /></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </article>    
+                </main>
+        </section>
+    </body>    
+</html>
+                 

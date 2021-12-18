@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap%27');
+
+.imgfoto-doutora {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  z-index: 2;   
+}
+
+.imglogo-irm {
+  position:absolute;
+  width: 220px;
+  height: 71px;
+  top: 25px;
+  left: 25px;
+  z-index: 3;
+}
+
+.imglogo-elevate {
+  text-align: right;
+  margin: 24px 0 12px 0;
+  margin: 10px;
+  width: 270px;
+  height:71px;
+  position: relative;
+  left: 1255px;
+  top: 310px;
+  z-index: 3;
+}
+
+.quadrado {
+  height: 200px;
+  width: 83px;
+  align-items: center;
+  display: flex;
+  padding: 20vh;
+  position: relative;
+  z-index: 2;
+  background-color: #F8FAFC;
+  border-radius: 40px;
+  left: 1150px;
+  top: 150px;
+  opacity: 0.85;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.192);
+}
+
+input[type=text] {
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #415D71;
+  padding: 10px;
+  width: 200px;
+  height: 10px;
+  position: relative; 
+  z-index: 2;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+input[type=password] {
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #415D71;
+  padding: 10px;
+  width: 200px;
+  height: 10px;
+  margin-top: 10px;
+  z-index: 2;
+  font-family: 'Merriweather Sans', sans-serif; 
+} 
+
+input[type=checkbox] {
+  z-index: 2;
+  position: relative;
+  bottom: 15px;
+  left: 8px;
+}
+
+.lembrar-senha {
+  z-index: 2;
+  font-family: 'Merriweather Sans', sans-serif;
+  position: relative;
+  bottom: 80px;
+  left: 23px;
+}
+
+span.senha {
+  float: right;
+  padding-top: 16px;
+  z-index: 2;
+  position: relative;
+  right: 52px;
+  font-family: 'Merriweather Sans', sans-serif; 
+}
+
+button {
+  background-color: #578EBE;
+  color: #f1f1f1;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #415D71;
+  cursor: pointer;
+  width: 200px;
+  z-index: 2;
+}
+
+button[type=submit] {
+  z-index: 2;
+  font-family: solid 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  position: relative;
+  top: 65px;
+  right: 7px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.login {
+  padding: 16px; 
+  position: relative;
+  top: 25px;
+  right: 85px;
+}
+
+.esqueci {
+  background-color:#f1f1f1;
+}
+
+@media screen and (max-width: 300px) {
+  span.senha {
+  display: block;
+  float: none;
+  }
+}

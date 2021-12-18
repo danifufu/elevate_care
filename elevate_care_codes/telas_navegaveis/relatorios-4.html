@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Description" content="Tela para a Emissão de Relatório referente a Quantidade de Consultas por Médico; Elevate Care: Sistema de Gestão de Atendimentos Clínicos; Cliente: IRM - Instituto Roberto Mateus" />
+        <meta name="Keywords" content="elevate, care, sistema, atendimento, clinico, medico, saude, irm, instituto, robeto mateus, emissao, relatorio, consulta" />
+        <meta name="robots" content="ALL" />
+        <meta name="Author" content="Daniela Araujo" />
+        <meta name="language" content="pt-br" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilo-relatorios-4.css" type="text/css">
+        <link rel="shortcut icon" type="imagex/png" href="img/logozinha-elevate.png">
+        <title>Elevate Care</title>    
+    </head>
+    <body>
+        <section id="container">
+            <header id="cabecalho">
+                <div>
+                    <img id="logo" src="img/elevate-care-white2.png" alt="logo do Sistema Elevate Care" />
+                    <img id="setabaixo" src="img/setabaixo.png" alt="seta para baixo" />
+                    <p>Bem-vindo,<br />Administrador!</p>
+                </div>                
+            </header>
+            <aside>
+                <img src="img/logoirm.png" alt="logo do IRM, Instituto Roberto Mateus" />
+                <hr id="linhalogo" />
+                <nav>
+                    <ul id="menu">
+                        <li><a id="home" href="home.html">Home</a></li>
+                        <li><a id="paciente" href="#">Paciente</a>
+                            <ul>
+                                <li><a href="cadastro.html">Cadastro</a></li>
+                                <li><a href="agendamento.html">Agendamento</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="medico" href="#">Médico</a> 
+                            <ul>
+                                <li><a href="agenda.html">Agenda</a></li>
+                                <li><a href="#">P.E.P.</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="financeiro" href="financeiro.html">Financeiro</a></li>
+                        <li><a id="relatorios" href="#">Relatórios</a> 
+                            <ul>
+                                <li><a href="relatorios-1.html">Consultas por Paciente</a></li> 
+                                <li><a href="relatorios-2.html">Consultas por Período</a></li> 
+                                <li><a href="relatorios-3.html">Quantidade de Agendamentos</a></li> 
+                                <li><a href="relatorios-4.html">Consultas por Médico</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="configuracoes" href="configuracoes.html">Configurações</a></li>
+                    </ul>
+                </nav>
+                </aside>
+                <div id="historico">
+                    <a href="home.html" id="navegar">Home ></a> Relatórios > Quantidade de consultas por médico
+                    <button id="botaoIr">></button>
+                    <input id="pesquisar" type="search" placeholder="  Pesquisar..." />
+                </div>
+                <main>
+                    <article id="amain">
+                        <header id="maintitulo">
+                            <h2>Emissão de Relatórios</h2>
+                        </header>
+                        <hr />
+                        <div id="conteudo">
+                            <form>
+                                <h3>Quantidade de Consultas por Médico:</h3>
+                                <div id="conteudo-primario">
+                                    <!-- Falta colocar algum informativo para o usuário??? -->
+                                    <select id="medicos" multiple="multiple">
+                                        <option value="1" selected="selected">Dr. Antônio Almeida</option>
+                                        <option value="2">Dra. Aline Mendes</option>
+                                        <option value="3">Dr. Bruno Aguiar</option>
+                                        <option value="4">Dra. Carolina Rizo</option>
+                                        <option value="5">Dr. Daniel Mota</option>
+                                        <option value="6">Dra. Emília Borba</option>
+                                        <option value="7">Dr. Fernando Leão</option>
+                                        <option value="8">Dra. Giovanna Corrêa</option>
+                                        <option value="9">Dr. Hugo Abreu</option>
+                                        <option value="10">Dr. Igor Cervero</option>
+                                    </select>
+                                </div>
+                                <div id="conteudo-secundario">
+                                    <form>
+                                    <label class="texto" for="data-inicial">De:</label>
+                                    <input type="date" id="data-inicial" name="data-inicial" />
+                                    <label class="texto" for="data-final">Até:</label>
+                                    <input type="date" id="data-final" name="data-final" />
+                                    <button type="submit" id="ok">Filtrar</button>
+                                    </form>
+                                </div>
+                            </form>
+                            <div id="relatorio-pdf">
+                                <h3>Visualização do Relatório:</h3>
+                                <embed src="img/relatorio4.pdf" />
+                            </div>
+                        </div>
+                    </article>    
+                </main>
+        </section>
+    </body>    
+</html>             
